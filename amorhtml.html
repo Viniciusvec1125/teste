@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to right,hwb(342 13% 7%), rgb(184, 67, 139));
+        }
+        .painel{
+            margin: auto;
+            width: 600px;
+            height:600px ;
+            background-color: white;
+            border-radius: 40px;
+            text-align: center;
+            padding-top: 70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+          
+
+          
+          
+
+
+            #sim{
+                
+                height: 40px;
+                width: 60px;
+                background-color:hwb(342 21% 30%) ;
+                border: 2px solid white;
+                border-radius: 10px;
+                color: white;
+                margin-left: -50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            #nao{
+                position: absolute;
+                height: 40px;
+                width: 60px;
+                background-color:hwb(342 21% 30%);
+                border: 2px solid white;
+                border-radius: 10px;
+                color: white;
+                margin-left: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="painel">
+    <h1> EU TE AMO MUITO!</h1> 
+    
+
+    <img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-beijos.gif" alt="">
+
+    <h1> VOCÊ ME AMA?</h1>
+    
+    
+    
+
+    <a href="https://youtu.be/yKNxeF4KMsY?si=22jKR0FYH6KuPOFI" ><button id="sim"> SIM! </button></a>
+    <button onmouseover="fuja()" id="nao"> NÃO! </button> 
+
+    
+
+    </div>
+    
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var largurajanela = window.innerWidth
+            var alturajanela = window.innerHeight
+
+            var X = largurajanela - botaoNao.offsetWidth;
+            var Y = alturajanela - botaoNao.offsetHeight;
+            
+            var aleatorioX = Math.floor(Math.random() * X);
+            var aleatorioY = Math.floor(Math.random() * Y);
+
+            botaoNao.style.left = aleatorioX + 'px';
+            botaoNao.style.top = aleatorioY + 'px';
+        }
+    </script>
+    
+</body>
+</html>
